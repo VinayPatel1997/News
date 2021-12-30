@@ -1,4 +1,4 @@
-package com.vinaykumar.news.data.models
+package com.vinaykumar.news.models
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
@@ -19,4 +19,4 @@ data class Article(
     val title: String?,
     val url: String?,
     val urlToImage: String?
-) : Serializable
+)

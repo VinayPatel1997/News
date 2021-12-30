@@ -1,11 +1,11 @@
-package com.vinaykumar.news.data.db
+package com.vinaykumar.news.db
 import androidx.room.TypeConverter
-import com.vinaykumar.news.data.models.Source
+import com.vinaykumar.news.models.Source
 
 class Converters {
 
     @TypeConverter
-    fun fromSource(source: Source): String {
+    fun fromSource(source: Source): String? {
         return source.name
     }
 
